@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.blob {
+    width: 400px;
+    height: 400px;
+    background-image: url(photo.jpg);
+    background-size: cover;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .2);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+    }
+
+    25% {
+        border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+    }
+
+    50% {
+        border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+    }
+
+    75% {
+        border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+    }
+
+    100% {
+        border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+    }
+}
